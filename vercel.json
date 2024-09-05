@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "dist/main.js",  // La salida del build de NestJS
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "dist/main.js"  // Ruta hacia el archivo principal de tu backend
+      }
+    ]
+  }
+  
